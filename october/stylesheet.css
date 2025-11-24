@@ -1,0 +1,61 @@
+<style>
+    body {
+      background-color: pink;
+    }
+    h1 {
+      color: brown;
+      font-family: 'Georgia', serif;
+    }
+    p.red {
+      color: darkgreen;
+      font-family: 'Arial', sans-serif;
+    }
+    p.blue {
+      color: dark green;
+      font-family: 'Courier New', monospace;
+    }
+    ul.list {
+      list-style-type: square;
+    }
+    ul.list li.cs {
+      font-family: 'Courier New', monospace;
+      font-size: 18px;
+      font-style: italic;
+      color: green;
+    }
+    ul.list li.bca {
+      font-family: 'Comic Sans MS', cursive;
+      font-size: 16px;
+      font-style: oblique;
+      color: orange;
+    }
+    ul.list li.mca {
+      font-family: 'Times New Roman', serif;
+      font-size: 20px;
+      font-style: normal;
+      color: purple;
+    }
+    
+	
+	
+	
+	table {
+ border-collapse: collapse;
+ width: 30%;
+ }
+ th, td {
+ border: 1px solid #ddd;
+ padding: 8px;
+ text-align: left;
+ }
+ th {
+ background-color: purple;
+ color: white;
+ }
+ tr:nth-child(even) {
+ background-color: #f2f2f2;
+ }
+ tr:hover {
+ background-color: #ddd;
+ }
+  </style>

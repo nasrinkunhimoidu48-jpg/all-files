@@ -1,0 +1,46 @@
+<html>
+<head>
+</head>
+<body>
+
+<center>
+  <h1 style="color:brown; font-family: 'Georgia', serif;">MESCE</h1>
+</center>
+
+<p style="color:red; font-family: 'Arial', sans-serif;">
+  MCA.<br>
+  MCA stands for Master of Computer Applications, a postgraduate degree focused on computer science, software development, and programming.
+</p>
+<p style="color:blue; font-family: 'Courier New', monospace;">
+  Hello this is a inline css
+</p>
+
+
+
+<ul class="list" style="list-style-type: square;">
+    <li style="font-family: 'Courier New', monospace; font-size: 18px; font-style: italic; color: green;">
+        computer science
+    </li>
+    <li style="font-family: 'Comic Sans MS', cursive; font-size: 16px; font-style: oblique; color: orange;">
+        bca
+    </li>
+    <li style="font-family: 'Times New Roman', serif; font-size: 20px;  font-style: normal; color: purple;">
+        mca
+    </li>
+</ul>
+
+
+<ol class="list" style="list-style-type:1;">
+    <li style="font-family: 'Courier New', monospace; font-size: 18px; font-style: italic; color: dark olive;">
+        plustwo
+    </li>
+    <li style="font-family: 'Comic Sans MS', cursive; font-size: 16px; font-style: oblique; color: brown;">
+        degree
+    </li>
+    <li style="font-family: 'Times New Roman', serif; font-size: 20px;  font-style: normal; color: purple;">
+        pg
+    </li>
+</ol>
+
+</body>
+</html>

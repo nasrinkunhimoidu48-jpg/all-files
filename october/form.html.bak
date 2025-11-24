@@ -1,0 +1,77 @@
+<html>
+  <body>
+    <center>
+      <h2>Registration form</h2>
+    </center>
+    <form>
+      <table>
+        <tr>
+          <td><label>Name:</label></td>
+          <td><input type="text" name="firstname"></td>
+        </tr>
+        <tr>
+          <td><label>Password:</label></td>
+          <td><input type="password" name="pass"></td>
+        </tr>
+        <tr>
+          <td><label>Phone no:</label></td>
+          <td><input type="text" maxlength="10" name="phoneno"></td>
+        </tr>
+        <tr>
+          <td><label>Address:</label></td>
+          <td>
+            <textarea id="address" name="address" placeholder="Enter your address here" required></textarea>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="dob">Date of Birth:</label></td>
+          <td><input type="date" id="dob" name="dob" required></td>
+        </tr>
+        <tr>
+          <td><label>Email:</label></td>
+          <td><input type="email" placeholder="Eg: john@gmail.com" name="email"></td>
+        </tr>
+        <tr>
+          <td><label for="nationality">Nationality:</label></td>
+          <td>
+            <select id="nationality" name="nationality" required>
+              <option value="">Select Nationality</option>
+              <option value="indian">Indian</option>
+              <option value="french">French</option>
+              <option value="american">American</option>
+              <option value="british">British</option>
+              <option value="other">Other</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td><label>Gender:</label></td>
+          <td>
+            <label><input type="radio" name="gender" value="male" checked required> Male</label>
+            <label><input type="radio" name="gender" value="female"> Female</label>
+            <label><input type="radio" name="gender" value="other"> Other</label>
+          </td>
+        </tr>
+        <tr>
+          <td><label>Languages:</label></td>
+          <td>
+            <fieldset>
+              <legend>Languages known</legend>
+              <label><input type="checkbox" name="languages" value="hindi"> Hindi</label><br>
+              <label><input type="checkbox" name="languages" value="malayalam"> Malayalam</label><br>
+              <label><input type="checkbox" name="languages" value="english" checked required> English</label><br>
+              <label><input type="checkbox" name="languages" value="tamil"> Tamil</label><br>
+              <label><input type="checkbox" name="languages" value="other"> Other</label><br>
+            </fieldset>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" align="center">
+            <input type="submit" value="Submit">
+            <input type="reset" value="Cancel">
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>

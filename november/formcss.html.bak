@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+    function validate() {
+        var name = document.getElementById("name").value.trim();
+        var phone = document.getElementById("phone").value.trim();
+        var passwd = document.getElementById("pwd").value.trim();
+
+        // Name validation: only letters allowed
+        var namePattern = /^[A-Za-z\s]+$/;
+        if (name == "") {
+            alert("Enter your Name");
+            return false;
+        } else if (!namePattern.test(name)) {
+            alert("Name must contain only alphabets (no numbers or special characters)");
+            return false;
+        }
+
+        // Phone validation: only digits allowed
+        var phonePattern = /^[0-9]+$/;
+        if (phone == "") {
+            alert("Enter your Phone Number");
+            return false;
+        } else if (!phonePattern.test(phone)) {
+            alert("Phone number must contain only digits");
+            return false;
+        } else if (phone.length != 10) {
+            alert("Phone number must be 10 digits");
+            return false;
+        }
+
+        // Password validation: 8+ chars with at least one letter, one digit, one special character
+        var passwordPattern = /^[A-Za-z0-9]{8,}$/;
+        if (passwd == "") {
+            alert("Enter a Password");
+            return false;
+        } else if (!passwordPattern.test(passwd)) {
+            alert("Password must be at least 8 characters long and contain a letter, a number, and a special character");
+            return false;
+        }
+
+        alert("Thank You for Registration!");
+        return true;
+    }
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Registration Form</h2>
+        <form onsubmit="return validate()">
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Enter your name">
+
+            <label for="phone">Phone Number:</label>
+            <input type="text" id="phone" placeholder="Enter your phone number">
+
+            <label for="pwd">Password:</label>
+            <input type="password" id="pwd" placeholder="Enter your password">
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

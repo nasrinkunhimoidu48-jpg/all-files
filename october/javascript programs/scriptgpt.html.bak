@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>String and Math Functions</title>
+</head>
+<body>
+
+<h1>String and Math Functions in JavaScript</h1>
+
+<script>
+let str = "  JavaScript Programming  ";
+
+document.writeln("<h2>String Object Functions</h2>");
+document.writeln("<b>Original String:</b> '" + str + "'<br><br>");
+document.writeln("Length: " + str.length + "<br>");
+document.writeln("To Upper Case: " + str.toUpperCase() + "<br>");
+document.writeln("To Lower Case: " + str.toLowerCase() + "<br>");
+document.writeln("Trim (remove spaces): '" + str.trim() + "'<br>");
+document.writeln("Slice (0,10): " + str.slice(0, 10) + "<br>");
+document.writeln("Substring (3,13): " + str.substring(3, 13) + "<br>");
+document.writeln("Replace 'JavaScript' with 'JS': " + str.replace("JavaScript", "JS") + "<br>");
+document.writeln("Includes 'Script'? " + str.includes("Script") + "<br>");
+document.writeln("Starts with '  J'? " + str.startsWith("  J") + "<br>");
+document.writeln("Ends with 'ing  '? " + str.endsWith("ing  ") + "<br>");
+document.writeln("Character at index 5: " + str.charAt(5) + "<br>");
+document.writeln("Index of 'P': " + str.indexOf("P") + "<br>");
+document.writeln("Split by space: " + str.split(" ") + "<br><br>");
+
+
+//maths
+document.writeln("<h2>Math Object Functions</h2>");
+document.writeln("Math.PI: " + Math.PI.toFixed(4) + "<br>");
+document.writeln("Math.sqrt(64): " + Math.sqrt(64) + "<br>");
+document.writeln("Math.pow(2, 5): " + Math.pow(2, 5) + "<br>");
+document.writeln("Math.abs(-12.7): " + Math.abs(-12.7) + "<br>");
+document.writeln("Math.ceil(4.3): " + Math.ceil(4.3) + "<br>");
+document.writeln("Math.floor(4.9): " + Math.floor(4.9) + "<br>");
+document.writeln("Math.round(4.5): " + Math.round(4.5) + "<br>");
+document.writeln("Math.min(5,10,1,20): " + Math.min(5,10,1,20) + "<br>");
+document.writeln("Math.max(5,10,1,20): " + Math.max(5,10,1,20) + "<br>");
+document.writeln("Math.random(): " + Math.random().toFixed(4) + "<br>");
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Beautifully Arranged Education Table & Lists</title>
+    <!-- External CSS stylesheet -->
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <style>
+        h2 {
+            color: brown;
+            font-family: 'Georgia', serif;
+            margin-bottom: 0.5em;
+        }
+
+        /* Centering the heading using CSS instead of <center> */
+        .centered {
+            text-align: center;
+        }
+
+        /* Table styling for neatness */
+        table {
+            width: 60%;
+            margin: 1em auto;
+            border-collapse: collapse;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+        }
+        th, td {
+            border: 1px solid #aaa;
+            padding: 0.6em 1em;
+            text-align: center;
+        }
+        th {
+            background-color: #f2e5d7;
+            font-family: 'Georgia', serif;
+        }
+        tr:nth-child(even) {
+            background-color: #f8f8ff;
+        }
+
+        /* Ordered List Styles (Internal CSS) */
+        ol.list {
+            list-style-type: decimal;
+            margin: 1em auto;
+            width: 30%;
+        }
+        ol.list li.plustwo {
+            font-family: 'Courier New', monospace;
+            font-size: 18px;
+            font-style: italic;
+            color: olive;
+        }
+        ol.list li.degree {
+            font-family: 'Comic Sans MS', cursive;
+            font-size: 16px;
+            font-style: oblique;
+            color: brown;
+        }
+        ol.list li.pg {
+            font-family: 'Times New Roman', serif;
+            font-size: 20px;
+            font-style: normal;
+            color: purple;
+        }
+
+        /* Inline paragraph spacing */
+        p[style] {
+            margin: 1em auto;
+            width: 80%;
+        }
+    </style>
+</head>
+<body>
+    <div class="centered">
+        <h2>Heading is styled using internal CSS</h2>
+    </div>
+
+    <p style="color:blue; font-family: 'Courier New', monospace;">
+        Hello, this is inline CSS.
+    </p>
+
+    <p style="color:red; font-family: 'Courier New', monospace;">
+        Inline CSS: Below table and ul list are styled using external stylesheet.
+    </p>
+
+    <table>
+        <thead>
+            <tr>
+                <th>PlusTwo</th>
+                <th>Degree</th>
+                <th>PG</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>CS</td>
+                <td>BCA</td>
+                <td>MCA</td>
+            </tr>
+            <tr>
+                <td>MES Ponnani</td>
+                <td>MD</td>
+                <td>MESCE</td>
+            </tr>
+            <tr>
+                <td>96%</td>
+                <td>72%</td>
+                <td>--</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <ul class="list">
+        <li class="cs">Computer Science</li>
+        <li class="bca">BCA</li>
+        <li class="mca">MCA</li>
+    </ul>
+
+    <p style="color:purple; font-family: 'Courier New', monospace;">
+        Inline CSS: Below ordered list is styled using internal CSS.
+    </p>
+
+    <ol class="list">
+        <li class="plustwo">PlusTwo</li>
+        <li class="degree">Degree</li>
+        <li class="pg">PG</li>
+    </ol>
+</body>
+</html>

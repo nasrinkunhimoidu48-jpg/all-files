@@ -1,0 +1,100 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<style>
+    h2 {
+      color: brown;
+      font-family: 'Georgia', serif;
+    }
+	
+	ol.list {
+      list-style-type: decimal;
+    }
+    ol.list li.plustwo {
+      font-family: 'Courier New', monospace;
+      font-size: 18px;
+      font-style: italic;
+      color: olive;
+    }
+    ol.list li.degree {
+      font-family: 'Comic Sans MS', cursive;
+      font-size: 16px;
+      font-style: oblique;
+      color: brown;
+    }
+    ol.list li.pg {
+      font-family: 'Times New Roman', serif;
+      font-size: 20px;
+      font-style: normal;
+      color: purple;
+    }
+</style>
+</head>
+<body>
+<center>
+<h2>heading is styled using internal css</h2>
+</center>
+
+<p style="color:blue; font-family: 'Courier New', monospace;">
+  Hello this is a inline css
+</p>
+
+<p style="color:red; font-family: 'Courier New', monospace;">inline css:below table and ul list is styled using external style sheet:</p>
+
+<table>
+ <thead>
+ <tr>
+ <th>PlusTwo</th>
+ <th>Degree</th>
+ <th>Pg</th>
+ </tr>
+ </thead>
+ <tbody>
+ <tr>
+ <td>CS</td>
+ <td>BCA</td>
+ <td>MCA</td>
+ </tr>
+ <tr>
+ <td>MES Ponnani</td>
+ <td>MD</td>
+ <td>MESCE</td>
+ </tr>
+ <tr>
+ <td>96%</td>
+ <td>72%</td>
+ <td>--</td>
+ </tr>
+ </tbody>
+</table>
+
+<ul class="list">
+    <li class="cs">
+        computer science
+    </li>
+    <li class="bca">
+        bca
+    </li>
+    <li class="mca">
+        mca
+    </li>
+</ul>
+
+
+<p style="color:purple; font-family: 'Courier New', monospace;">inline css:below ol list is styled using internal css:</p>
+
+<ol class="list">
+    <li class="plustwo">
+        plustwo
+    </li>
+    <li class="degree">
+        degree
+    </li>
+    <li class="pg">
+        pg
+    </li>
+</ol>
+</body>
+</html>
+
+

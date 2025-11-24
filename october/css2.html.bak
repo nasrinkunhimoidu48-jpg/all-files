@@ -1,0 +1,100 @@
+<html>
+<head>
+  <style>
+    h1 {
+      color: brown;
+      font-family: 'Georgia', serif;
+    }
+    p.red {
+      color: darkgreen;
+      font-family: 'Arial', sans-serif;
+    }
+    p.blue {
+      color: dark green;
+      font-family: 'Courier New', monospace;
+    }
+    ul.list {
+      list-style-type: square;
+    }
+    ul.list li.cs {
+      font-family: 'Courier New', monospace;
+      font-size: 18px;
+      font-style: italic;
+      color: green;
+    }
+    ul.list li.bca {
+      font-family: 'Comic Sans MS', cursive;
+      font-size: 16px;
+      font-style: oblique;
+      color: orange;
+    }
+    ul.list li.mca {
+      font-family: 'Times New Roman', serif;
+      font-size: 20px;
+      font-style: normal;
+      color: purple;
+    }
+    ol.list {
+      list-style-type: decimal;
+    }
+    ol.list li.plustwo {
+      font-family: 'Courier New', monospace;
+      font-size: 18px;
+      font-style: italic;
+      color: olive;
+    }
+    ol.list li.degree {
+      font-family: 'Comic Sans MS', cursive;
+      font-size: 16px;
+      font-style: oblique;
+      color: brown;
+    }
+    ol.list li.pg {
+      font-family: 'Times New Roman', serif;
+      font-size: 20px;
+      font-style: normal;
+      color: purple;
+    }
+  </style>
+</head>
+<body>
+
+<center>
+  <h1>MESCE COLLEGE</h1>
+</center>
+
+<p class="red">
+  MCA<br>
+  MCA stands for Master of Computer Applications, a postgraduate degree focused on computer science, software development, and programming.
+</p>
+
+<p class="blue">
+  Hello this is a internal css
+</p>
+
+<ul class="list">
+    <li class="cs">
+        computer science
+    </li>
+    <li class="bca">
+        bca
+    </li>
+    <li class="mca">
+        mca
+    </li>
+</ul>
+
+<ol class="list">
+    <li class="plustwo">
+        plustwo
+    </li>
+    <li class="degree">
+        degree
+    </li>
+    <li class="pg">
+        pg
+    </li>
+</ol>
+
+</body>
+</html>

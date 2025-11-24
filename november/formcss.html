@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script>
+    function validate() {
+        var name = document.getElementById("name").value.trim();
+        var phone = document.getElementById("phone").value.trim();
+        var passwd = document.getElementById("pwd").value.trim();
+        var confPasswd = document.getElementById("cpwd").value.trim();
+
+        // Name validation
+        var namePattern = /^[A-Za-z\s]+$/;
+        if (name == "") {
+            alert("Enter your Name");
+            return false;
+        } else if (!namePattern.test(name)) {
+            alert("Name must contain only alphabets");
+            return false;
+        }
+
+        // Phone validation
+        var phonePattern = /^[0-9]+$/;
+        if (phone == "") {
+            alert("Enter your Phone Number");
+            return false;
+        } else if (!phonePattern.test(phone)) {
+            alert("Phone number must contain only digits");
+            return false;
+        } else if (phone.length != 10) {
+            alert("Phone number must be 10 digits");
+            return false;
+        }
+
+        // Password validation (simple 8+ characters)
+        var passwordPattern = /^[A-Za-z0-9]{8,}$/;
+        if (passwd == "") {
+            alert("Enter a Password");
+            return false;
+        } else if (!passwordPattern.test(passwd)) {
+            alert("Password must be at least 8 characters (letters or numbers)");
+            return false;
+        }
+
+        // Confirm Password validation
+        if (confPasswd == "") {
+            alert("Enter Confirm Password");
+            return false;
+        } else if (passwd !== confPasswd) {
+            alert("Password & Confirm Password do not match");
+            return false;
+        }
+
+        alert("Thank You for Registration!");
+        return true;
+    }
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Form Validation</h2>
+        <form onsubmit="return validate()">
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Enter your name">
+
+            <label for="phone">Phone Number:</label>
+            <input type="text" id="phone" placeholder="Enter your phone number">
+
+            <label for="pwd">Password:</label>
+            <input type="password" id="pwd" placeholder="Enter your password">
+
+            <label for="cpwd">Confirm Password:</label>
+            <input type="password" id="cpwd" placeholder="Re-enter your password">
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

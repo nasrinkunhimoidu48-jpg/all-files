@@ -1,0 +1,41 @@
+<html>
+<head>
+<script>
+let s2 = 'Javascript';
+document.writeln(s2, "<br>");
+
+var s1 = "Welcome to JS Programming";
+document.writeln(s1, "<br>");
+
+let s = `Javascript
+ Programming`;
+document.writeln(s, "<br>");
+
+// Extracting using Slice() operation
+document.writeln("Slice() ", s1.slice(0, 7), "<br>");
+document.writeln("Slice() ", s1.slice(10), "<br>"); // start slicing from 10th index
+document.writeln("Slice() ", s1.slice(-11, -1), "<br>"); // Negative index
+
+// Substring(), Substr() and Replace()
+document.writeln("Substring() ", s1.substring(0, 12), "<br>"); // will not accept negative index
+document.writeln("Substr() ", s1.substr(0, 10), "<br>"); // will accept the negative index
+document.writeln("Replace() ", s1.replace("JS", "Java Script"), "<br>"); // will replace only first occurrence
+
+let st = "js Welcome to js Programming";
+
+// Replacing all occurrences of "js" using a regular expression with the 'g' flag
+let newstr = st.replace(/js/g, "Javascript");
+console.log(newstr);
+
+// Replacing with a function (e.g., to convert to uppercase)
+let newtext = st.replace(/js/g, (match) => match.toUpperCase());
+console.log(newtext);
+
+// ✅ Corrected replaceAll
+let t = st.replaceAll("js", "Javascript");
+console.log(t);
+</script>
+</head>
+<body>
+</body>
+</html>
